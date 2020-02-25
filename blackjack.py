@@ -66,6 +66,7 @@ for i in range(1,10):
 #thehand
 mycards=[]
 mycards.append(random.choice(deckmod))
+deckmod.remove(mycards[0])
 try:
     S+=int(mycards[0][0])
 except:
@@ -79,6 +80,7 @@ while Pouka(S)==True:
     
     if Continue(x)==True:
         mycards.append(random.choice(deckmod))
+        deckmod.remove(mycards[0])
         j+=1
         try:
            S+=int(mycards[j][0])
