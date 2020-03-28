@@ -36,7 +36,7 @@ while b <= 0:
 
 #Number of available data
 N = int(input("Enter the number of trials (>=3): "))
-while N < 3:
+while N < 3 or N > 200:
      N = int(input())
 
 count=0 #counts number of heads
